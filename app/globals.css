@@ -80,3 +80,35 @@ h1 span{background:linear-gradient(90deg,#b7a4ff,#7de5cb);-webkit-background-cli
 .footer-brand{font-size:15px;color:#e9eaf2}.footer-brand .brand-mark{width:27px;height:27px;font-size:17px;border-radius:8px}
 @media(max-width:850px){.hero-content{width:65%}.hero-art{left:-7%;opacity:.6;transform:translateY(-50%) scale(.82)}.tools-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){.site-shell{padding:0 19px}.topbar{height:69px}.top-links{display:none}.top-note{font-size:10px}.hero{min-height:510px;align-items:flex-start}.hero-content{width:100%;padding:60px 0 50px}.hero-art{left:-100px;top:auto;bottom:-85px;transform:scale(.57);transform-origin:center;opacity:.23}.hero-copy{font-size:13px;max-width:390px}h1{font-size:49px}.search-wrap{height:57px}.search-wrap kbd{display:none}.section-heading h2{font-size:22px}.tools-section{padding:53px 0}.tools-grid{grid-template-columns:1fr}.tool-card{min-height:315px}.tool-description{min-height:0}.bottom-banner{padding:19px;flex-wrap:wrap}.bottom-banner>a{margin-right:0}.footer{padding:18px 0;gap:12px;flex-wrap:wrap}.footer>span:nth-child(2){order:3;width:100%}}
+
+
+/* Language switcher and bidirectional layout */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+.header-actions{display:flex;align-items:center;gap:18px}
+.language-switch{display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border:1px solid #a78bfa55;border-radius:9px;background:#a78bfa12;color:#d4c9ff;font-size:11px;font-weight:700;cursor:pointer;white-space:nowrap;transition:background .2s,border-color .2s}
+.language-switch:hover{background:#a78bfa25;border-color:#a78bfa99}
+.language-switch span{font-family:Arial,sans-serif;font-size:14px}
+html[lang="en"] body{font-family:'Inter',Arial,sans-serif}
+html[lang="en"] .hero-content,html[lang="en"] .section-heading,html[lang="en"] .tool-card,html[lang="en"] .bottom-banner,html[lang="en"] .footer{text-align:left}
+html[lang="en"] .hero-art{left:auto;right:5%}
+html[lang="en"] .float-top{right:auto;left:4%}
+html[lang="en"] .float-bottom{left:auto;right:0}
+html[lang="en"] .spark-a{left:auto;right:70px}
+html[lang="en"] .spark-b{right:auto;left:55px}
+html[lang="en"] .english-name{text-align:left}
+html[lang="en"] .featured-label span{margin-left:0;margin-right:3px}
+html[lang="en"] .bottom-banner>a{margin-right:0;margin-left:auto}
+html[lang="en"] .bottom-banner>a span{margin-right:0;margin-left:6px}
+html[lang="en"] .result-count span{margin-left:0;margin-right:4px}
+html[lang="en"] .hero-meta{direction:ltr}
+html[lang="en"] .footer-brand{direction:ltr}
+@media(max-width:850px){
+  html[lang="en"] .hero-art{right:-7%;left:auto}
+}
+@media(max-width:620px){
+  .header-actions{gap:9px}
+  .top-note{max-width:130px;line-height:1.5}
+  .language-switch{padding:7px 9px;font-size:10px}
+  html[lang="en"] .hero-art{right:-100px;left:auto}
+  html[lang="en"] .bottom-banner>a{margin-left:0}
+}
