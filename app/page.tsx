@@ -73,6 +73,17 @@ const tools: Tool[] = [
     tags: { en: ["Screen recording", "Video editing", "Open source", "MCP", "AI agents", "Loom alternative", "Self-hosted"], ar: ["تسجيل الشاشة", "تحرير الفيديو", "مفتوح المصدر", "MCP", "وكلاء الذكاء الاصطناعي", "بديل Loom", "استضافة ذاتية"] }
   },
   {
+    id: 8, name: "AppFlowy", englishName: "AppFlowy — Open-source Notion Alternative",
+    description: {
+      en: "An open-source workspace for notes, documents, wikis, databases and project management, with grid and Kanban views. Use its desktop and mobile apps, try the hosted cloud option, or self-host it to keep control of your data. AI features are also available, with some capabilities depending on the setup or plan.",
+      ar: "مساحة عمل مفتوحة المصدر كبديل لـ Notion، تجمع الملاحظات والمستندات وقواعد المعرفة وقواعد البيانات وإدارة المشاريع، مع طرق عرض مثل Grid وKanban. يمكنك استخدام تطبيقات الكمبيوتر والهاتف، أو تجربة الخدمة السحابية، أو استضافتها بنفسك للتحكم في بياناتك. تتوفر أيضاً مزايا للذكاء الاصطناعي، وقد تختلف حسب طريقة الاستخدام أو الخطة."
+    },
+    category: "productivity", url: "https://appflowy.com/",
+    sourceUrl: "https://github.com/AppFlowy-IO/AppFlowy",
+    openSource: true, mark: "A", accent: "appflowy",
+    tags: { en: ["Open source", "Notion alternative", "Productivity", "Notes", "Databases", "Kanban", "Self-hosted", "AGPL-3.0"], ar: ["مفتوح المصدر", "بديل Notion", "الإنتاجية", "ملاحظات", "قواعد البيانات", "Kanban", "استضافة ذاتية", "AGPL-3.0"] }
+  },
+  {
     id: 7, name: "Notion", englishName: "Notion — All-in-one Workspace",
     description: {
       en: "An all-in-one workspace for notes, documents, wikis, project management and databases. Notion AI helps write, summarize and search your workspace, while Notion Agent and MCP connect AI tools and agents to your knowledge and workflows. Free plan available; advanced AI features depend on the plan.",
