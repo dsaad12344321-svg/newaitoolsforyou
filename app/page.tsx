@@ -84,6 +84,27 @@ const tools: Tool[] = [
     tags: { en: ["Open source", "Notion alternative", "Productivity", "Notes", "Databases", "Kanban", "Self-hosted", "AGPL-3.0"], ar: ["مفتوح المصدر", "بديل Notion", "الإنتاجية", "ملاحظات", "قواعد البيانات", "Kanban", "استضافة ذاتية", "AGPL-3.0"] }
   },
   {
+    id: 9, name: "VoiceStudio", englishName: "VoiceStudio — Local AI Voice Studio",
+    description: {
+      en: "An open-source, local-first AI voice studio for voice cloning and design, video dubbing, dictation, transcription, and audiobook creation. It supports a broad language catalogue (646 languages); actual voice coverage depends on the selected engine. Core local workflows can run on your own device.",
+      ar: "استوديو صوتي مفتوح المصدر يعمل محلياً على جهازك، يتيح استنساخ الأصوات وتصميمها ودبلجة الفيديو والإملاء الصوتي والتفريغ النصي وإنشاء الكتب الصوتية. يضم فهرساً يصل إلى 646 لغة، لكن دعم اللغات وجودة الصوت يعتمدان على محرك التشغيل المختار."
+    },
+    category: "voice", url: "https://voicestudio.sh/",
+    sourceUrl: "https://github.com/AiTH-Solutions/VoiceStudio.sh",
+    openSource: true, mark: "🎙", accent: "openwhisper",
+    tags: { en: ["Open source", "Voice cloning", "Text to speech", "Video dubbing", "Transcription", "Audiobooks", "Local AI"], ar: ["مفتوح المصدر", "استنساخ الصوت", "تحويل النص إلى كلام", "دبلجة الفيديو", "تفريغ صوتي", "كتب صوتية", "ذكاء اصطناعي محلي"] }
+  },
+  {
+    id: 10, name: "Muapi", englishName: "Muapi — Unified Generative Media API",
+    description: {
+      en: "A unified platform for accessing hundreds of generative AI models through one API, covering image and video generation, editing, audio and music, lip-sync, and 3D. It also offers browser-based tools and a playground. Pricing varies by model and generation; check the current rate before running jobs.",
+      ar: "منصة موحدة تتيح الوصول إلى مئات نماذج الذكاء الاصطناعي التوليدي من خلال API واحد، لإنشاء الصور والفيديو وتحريرهما، وتوليد الصوت والموسيقى ومزامنة الشفاه وإنشاء مجسمات ثلاثية الأبعاد. توفر أيضاً أدوات تعمل من المتصفح وPlayground للتجربة. تختلف التكلفة حسب النموذج وعملية التوليد."
+    },
+    category: "design", url: "https://muapi.ai/",
+    mark: "M", accent: "forever",
+    tags: { en: ["AI API", "Image generation", "Video generation", "Audio", "Music", "Lip sync", "3D", "Pay per generation"], ar: ["واجهة API", "إنشاء الصور", "إنشاء الفيديو", "الصوت", "الموسيقى", "مزامنة الشفاه", "ثلاثي الأبعاد", "الدفع حسب الاستخدام"] }
+  },
+  {
     id: 7, name: "Notion", englishName: "Notion — All-in-one Workspace",
     description: {
       en: "An all-in-one workspace for notes, documents, wikis, project management and databases. Notion AI helps write, summarize and search your workspace, while Notion Agent and MCP connect AI tools and agents to your knowledge and workflows. Free plan available; advanced AI features depend on the plan.",
