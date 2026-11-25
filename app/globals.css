@@ -111,3 +111,10 @@ html[lang="en"] .footer-brand{direction:ltr}
   html[lang="en"] .hero-art{right:-100px;left:auto}
   html[lang="en"] .bottom-banner>a{margin-left:0}
 }
+
+
+.tool-logo.opencut{background:linear-gradient(145deg,#d5f7e8,#72cba5);color:#123d2e}
+.tool-links{display:flex;flex-direction:column;gap:8px;margin-top:auto}
+.tool-links .visit-link{margin-top:0}
+.source-link{display:flex;align-items:center;justify-content:space-between;color:#8fa0bd;font-size:10px;padding-top:2px}
+.source-link:hover{color:#c4b5fd}
