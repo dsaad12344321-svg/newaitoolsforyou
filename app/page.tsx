@@ -6,7 +6,7 @@ type Language = "en" | "ar";
 type Tool = {
   id: number; name: string; englishName: string;
   description: Record<Language, string>;
-  category: string; url: string; mark: string; accent: string;
+  category: string; url: string; mark: string; accent: string; sourceUrl?: string; openSource?: boolean;
   tags: Record<Language, string[]>; featured?: boolean;
 };
 
@@ -29,6 +29,16 @@ const tools: Tool[] = [
     category: "directory", url: "https://aifreeforever.com/", mark: "✳", accent: "forever",
     tags: { en: ["Free", "AI tools", "Discovery"], ar: ["مجاني", "أدوات", "اكتشاف"] }, featured: true
   },
+  {
+    id: 3, name: "OpenCut", englishName: "OpenCut — Open-source Video Editor",
+    description: {
+      en: "A free, open-source video editor and CapCut alternative for creating and editing videos. The project is being rebuilt, while the current website still runs the classic version.",
+      ar: "محرر فيديو مجاني ومفتوح المصدر، يُعد بديلاً لـ CapCut. يجري تطوير المشروع من جديد، بينما يعمل الموقع حالياً بالنسخة الكلاسيكية."
+    },
+    category: "video", url: "https://opencut.app/", sourceUrl: "https://github.com/OpenCut-app/OpenCut",
+    openSource: true, mark: "▶", accent: "opencut",
+    tags: { en: ["Open source", "Video editing", "Free", "MIT license"], ar: ["مفتوح المصدر", "تحرير الفيديو", "مجاني", "ترخيص MIT"] }
+  },
 ];
 
 const copy = {
@@ -42,7 +52,7 @@ const copy = {
     selected: "curated tools", meta: "Discover. Try. Create.",
     library: "THE TOOL LIBRARY", heading: "Find your next favorite tool",
     subheading: "A growing collection of useful tools to help you get more done.",
-    result: "results", all: "All tools", research: "Research & Learning",
+    result: "results", all: "All tools", research: "Research & Learning", video: "Video & Editing",
     directory: "AI Directories", productivity: "Productivity", design: "Design", writing: "Writing",
     featured: "Featured", visit: "Visit tool",
     emptyTitle: "No matching tools found", emptyText: "Try another search term or choose a different category.",
@@ -62,7 +72,7 @@ const copy = {
     selected: "أدوات مختارة", meta: "اكتشف، جرّب، أنجز",
     library: "مكتبة الأدوات", heading: "اكتشف ما يمكنك إنجازه",
     subheading: "مجموعة من الأدوات المفيدة لتبدأ بها رحلتك.",
-    result: "نتيجة", all: "كل الأدوات", research: "البحث والتعلّم",
+    result: "نتيجة", all: "كل الأدوات", research: "البحث والتعلّم", video: "الفيديو والمونتاج",
     directory: "دليل أدوات", productivity: "الإنتاجية", design: "التصميم", writing: "الكتابة",
     featured: "مختارة", visit: "زيارة الأداة",
     emptyTitle: "لم نعثر على أدوات مطابقة", emptyText: "جرّب كلمة بحث أخرى أو اختر تصنيفاً مختلفاً.",
@@ -74,7 +84,7 @@ const copy = {
   }
 } as const;
 
-const categoryIds = ["all", "research", "directory", "productivity", "design", "writing"] as const;
+const categoryIds = ["all", "research", "video", "directory", "productivity", "design", "writing"] as const;
 
 export default function Home() {
   const [language, setLanguage] = useState<Language>("en");
@@ -169,9 +179,14 @@ export default function Home() {
                 <h3>{tool.name}</h3><div className="english-name">{tool.englishName}</div>
                 <p className="tool-description">{tool.description[language]}</p>
                 <div className="tag-row">{tool.tags[language].map((tag) => <span key={tag}>{tag}</span>)}</div>
-                <a className="visit-link" href={tool.url} target="_blank" rel="noopener noreferrer">
-                  <span>{t.visit}</span><span className="external-arrow">↗</span>
-                </a>
+                <div className="tool-links">
+                  <a className="visit-link" href={tool.url} target="_blank" rel="noopener noreferrer">
+                    <span>{t.visit}</span><span className="external-arrow">↗</span>
+                  </a>
+                  {tool.sourceUrl && <a className="source-link" href={tool.sourceUrl} target="_blank" rel="noopener noreferrer">
+                    <span>{language === "en" ? "View source on GitHub" : "عرض الكود على GitHub"}</span><span className="external-arrow">↗</span>
+                  </a>}
+                </div>
               </article>
             ))}
           </div>
