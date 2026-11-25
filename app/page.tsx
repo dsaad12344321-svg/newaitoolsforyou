@@ -39,6 +39,17 @@ const tools: Tool[] = [
     openSource: true, mark: "▶", accent: "opencut",
     tags: { en: ["Open source", "MCP", "AI agents", "Video editing", "Free", "MIT license"], ar: ["مفتوح المصدر", "MCP", "وكلاء الذكاء الاصطناعي", "تحرير الفيديو", "مجاني", "ترخيص MIT"] }
   },
+  {
+    id: 4, name: "Chatwoot", englishName: "Chatwoot — Open-source Customer Support",
+    description: {
+      en: "An open-source customer support platform that brings website live chat, email, WhatsApp and social messaging into one shared inbox. Includes automation, a help center, reports and APIs; it can also be self-hosted.",
+      ar: "منصة مفتوحة المصدر لخدمة العملاء تجمع محادثات الموقع والبريد الإلكتروني وواتساب ورسائل شبكات التواصل في صندوق وارد موحد. توفر الأتمتة ومركز مساعدة وتقارير وواجهات API، ويمكن استضافتها على خادمك الخاص."
+    },
+    category: "support", url: "https://app.chatwoot.com/app/login",
+    sourceUrl: "https://github.com/chatwoot/chatwoot", openSource: true,
+    mark: "C", accent: "chatwoot",
+    tags: { en: ["Open source", "Customer support", "Live chat", "WhatsApp", "Omnichannel", "MIT license"], ar: ["مفتوح المصدر", "خدمة العملاء", "دردشة مباشرة", "واتساب", "قنوات متعددة", "ترخيص MIT"] }
+  },
 ];
 
 const copy = {
@@ -52,7 +63,7 @@ const copy = {
     selected: "curated tools", meta: "Discover. Try. Create.",
     library: "THE TOOL LIBRARY", heading: "Find your next favorite tool",
     subheading: "A growing collection of useful tools to help you get more done.",
-    result: "results", all: "All tools", research: "Research & Learning", video: "Video & Editing",
+    result: "results", all: "All tools", research: "Research & Learning", video: "Video & Editing", support: "Customer Support",
     directory: "AI Directories", productivity: "Productivity", design: "Design", writing: "Writing",
     featured: "Featured", visit: "Visit tool",
     emptyTitle: "No matching tools found", emptyText: "Try another search term or choose a different category.",
@@ -72,7 +83,7 @@ const copy = {
     selected: "أدوات مختارة", meta: "اكتشف، جرّب، أنجز",
     library: "مكتبة الأدوات", heading: "اكتشف ما يمكنك إنجازه",
     subheading: "مجموعة من الأدوات المفيدة لتبدأ بها رحلتك.",
-    result: "نتيجة", all: "كل الأدوات", research: "البحث والتعلّم", video: "الفيديو والمونتاج",
+    result: "نتيجة", all: "كل الأدوات", research: "البحث والتعلّم", video: "الفيديو والمونتاج", support: "خدمة العملاء",
     directory: "دليل أدوات", productivity: "الإنتاجية", design: "التصميم", writing: "الكتابة",
     featured: "مختارة", visit: "زيارة الأداة",
     emptyTitle: "لم نعثر على أدوات مطابقة", emptyText: "جرّب كلمة بحث أخرى أو اختر تصنيفاً مختلفاً.",
@@ -84,7 +95,7 @@ const copy = {
   }
 } as const;
 
-const categoryIds = ["all", "research", "video", "directory", "productivity", "design", "writing"] as const;
+const categoryIds = ["all", "research", "video", "support", "directory", "productivity", "design", "writing"] as const;
 
 export default function Home() {
   const [language, setLanguage] = useState<Language>("en");
