@@ -61,6 +61,17 @@ const tools: Tool[] = [
     mark: "🎙", accent: "openwhisper",
     tags: { en: ["Voice typing", "Speech to text", "Open source", "Windows", "Android", "OpenAI API"], ar: ["الكتابة بالصوت", "تحويل الكلام إلى نص", "مفتوح المصدر", "ويندوز", "أندرويد", "OpenAI API"] }
   },
+  {
+    id: 6, name: "Cap", englishName: "Cap — Open-source Screen Recorder",
+    description: {
+      en: "An open-source Loom alternative for recording your screen, camera, and microphone, then editing and sharing polished videos. Includes Instant and Studio modes, AI transcripts and summaries on eligible plans, self-hosting, a CLI, and a local MCP server with 76 tools for AI agents.",
+      ar: "بديل مفتوح المصدر لـ Loom لتسجيل الشاشة والكاميرا والميكروفون، ثم تحرير الفيديو ومشاركته. يوفر وضعي Instant وStudio، وتفريغاً وملخصات بالذكاء الاصطناعي في الخطط المدعومة، مع إمكانية الاستضافة الذاتية وCLI وخادم MCP محلي يضم 76 أداة لوكلاء الذكاء الاصطناعي."
+    },
+    category: "video", url: "https://cap.so/",
+    sourceUrl: "https://github.com/CapSoftware/Cap",
+    mark: "C", accent: "cap",
+    tags: { en: ["Screen recording", "Video editing", "Open source", "MCP", "AI agents", "Loom alternative", "Self-hosted"], ar: ["تسجيل الشاشة", "تحرير الفيديو", "مفتوح المصدر", "MCP", "وكلاء الذكاء الاصطناعي", "بديل Loom", "استضافة ذاتية"] }
+  },
 ];
 
 const copy = {
