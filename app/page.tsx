@@ -105,6 +105,15 @@ const tools: Tool[] = [
     tags: { en: ["AI API", "Image generation", "Video generation", "Audio", "Music", "Lip sync", "3D", "Pay per generation"], ar: ["واجهة API", "إنشاء الصور", "إنشاء الفيديو", "الصوت", "الموسيقى", "مزامنة الشفاه", "ثلاثي الأبعاد", "الدفع حسب الاستخدام"] }
   },
   {
+    id: 11, name: "Flow", englishName: "Google Flow — AI Filmmaking Tool",
+    description: {
+      en: "Google's AI filmmaking tool for creating cinematic video clips and scenes from text and images, with tools to build and edit visual stories. Availability and features may vary by region and Google account.",
+      ar: "أداة Google لصناعة الفيديو بالذكاء الاصطناعي، تساعدك على إنشاء لقطات ومشاهد سينمائية انطلاقاً من النصوص والصور، مع أدوات لبناء القصص المرئية وتعديلها. قد يختلف توفر الأداة ومزاياها حسب المنطقة وحساب Google."
+    },
+    category: "video", url: "https://flow.google.com/", mark: "F", accent: "opencut",
+    tags: { en: ["Google", "AI video", "Text to video", "Image to video", "Filmmaking", "Video generation"], ar: ["Google", "فيديو بالذكاء الاصطناعي", "تحويل النص إلى فيديو", "تحويل الصور إلى فيديو", "صناعة الأفلام", "توليد الفيديو"] }
+  },
+  {
     id: 7, name: "Notion", englishName: "Notion — All-in-one Workspace",
     description: {
       en: "An all-in-one workspace for notes, documents, wikis, project management and databases. Notion AI helps write, summarize and search your workspace, while Notion Agent and MCP connect AI tools and agents to your knowledge and workflows. Free plan available; advanced AI features depend on the plan.",
