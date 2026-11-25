@@ -32,12 +32,12 @@ const tools: Tool[] = [
   {
     id: 3, name: "OpenCut", englishName: "OpenCut — Open-source Video Editor",
     description: {
-      en: "A free, open-source video editor and CapCut alternative for creating and editing videos. The project is being rebuilt, while the current website still runs the classic version.",
+      en: "A free, open-source video editor and CapCut alternative. Its upcoming rewrite plans to include an MCP server, allowing AI agents to control video-editing workflows. MCP is planned for the new version; the current website still runs the classic version.",
       ar: "محرر فيديو مجاني ومفتوح المصدر، يُعد بديلاً لـ CapCut. يجري تطوير المشروع من جديد، بينما يعمل الموقع حالياً بالنسخة الكلاسيكية."
     },
     category: "video", url: "https://opencut.app/", sourceUrl: "https://github.com/OpenCut-app/OpenCut",
     openSource: true, mark: "▶", accent: "opencut",
-    tags: { en: ["Open source", "Video editing", "Free", "MIT license"], ar: ["مفتوح المصدر", "تحرير الفيديو", "مجاني", "ترخيص MIT"] }
+    tags: { en: ["Open source", "MCP", "AI agents", "Video editing", "Free", "MIT license"], ar: ["مفتوح المصدر", "MCP", "وكلاء الذكاء الاصطناعي", "تحرير الفيديو", "مجاني", "ترخيص MIT"] }
   },
 ];
 
