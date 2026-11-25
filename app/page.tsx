@@ -72,6 +72,16 @@ const tools: Tool[] = [
     mark: "C", accent: "cap",
     tags: { en: ["Screen recording", "Video editing", "Open source", "MCP", "AI agents", "Loom alternative", "Self-hosted"], ar: ["تسجيل الشاشة", "تحرير الفيديو", "مفتوح المصدر", "MCP", "وكلاء الذكاء الاصطناعي", "بديل Loom", "استضافة ذاتية"] }
   },
+  {
+    id: 7, name: "Notion", englishName: "Notion — All-in-one Workspace",
+    description: {
+      en: "An all-in-one workspace for notes, documents, wikis, project management and databases. Notion AI helps write, summarize and search your workspace, while Notion Agent and MCP connect AI tools and agents to your knowledge and workflows. Free plan available; advanced AI features depend on the plan.",
+      ar: "مساحة عمل متكاملة للملاحظات والمستندات وقواعد المعرفة وإدارة المشاريع وقواعد البيانات. يساعد Notion AI في الكتابة والتلخيص والبحث داخل مساحة العمل، بينما يتيح Notion Agent وMCP ربط أدوات ووكلاء الذكاء الاصطناعي بمعلوماتك وسير العمل. تتوفر خطة مجانية، بينما تعتمد مزايا الذكاء الاصطناعي المتقدمة على نوع الاشتراك."
+    },
+    category: "productivity", url: "https://app.notion.com/",
+    mark: "N", accent: "notion",
+    tags: { en: ["Productivity", "Notes", "Project management", "Databases", "Notion AI", "MCP", "AI agents"], ar: ["الإنتاجية", "ملاحظات", "إدارة المشاريع", "قواعد البيانات", "Notion AI", "MCP", "وكلاء الذكاء الاصطناعي"] }
+  },
 ];
 
 const copy = {
