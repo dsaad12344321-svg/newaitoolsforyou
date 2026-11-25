@@ -2,15 +2,24 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "AI Tools Hub | دليل أدوات الذكاء الاصطناعي",
-  description: "اكتشف أفضل أدوات الذكاء الاصطناعي في مكان واحد. ابحث وتصفح الأدوات حسب الاستخدام.",
+  title: "AI Tools Hub | Discover the Best AI Tools",
+  description: "Discover useful AI tools for research, productivity, writing, and creativity. Search and explore the best AI tools in one place.",
   applicationName: "AI Tools Hub",
-  keywords: ["AI", "أدوات الذكاء الاصطناعي", "ذكاء اصطناعي", "AI tools"],
+  keywords: [
+    "AI tools", "artificial intelligence", "AI directory", "free AI tools",
+    "أدوات الذكاء الاصطناعي", "دليل أدوات الذكاء الاصطناعي"
+  ],
+  openGraph: {
+    title: "AI Tools Hub | Discover the Best AI Tools",
+    description: "Explore useful AI tools for work, learning, and creativity.",
+    siteName: "AI Tools Hub",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="ar" dir="rtl">
+    <html lang="en" dir="ltr">
       <body>{children}</body>
     </html>
   );
