@@ -15,6 +15,8 @@
 
 - [NotebookLM](https://notebook.google.com/)
 - [AI Free Forever](https://aifreeforever.com/)
+- [VoiceStudio](https://voicestudio.sh/)
+- [Muapi](https://muapi.ai/)
 
 ## التشغيل محلياً
 
