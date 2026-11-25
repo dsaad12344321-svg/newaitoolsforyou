@@ -50,6 +50,17 @@ const tools: Tool[] = [
     mark: "C", accent: "chatwoot",
     tags: { en: ["Open source", "Customer support", "Live chat", "WhatsApp", "Omnichannel", "MIT license"], ar: ["مفتوح المصدر", "خدمة العملاء", "دردشة مباشرة", "واتساب", "قنوات متعددة", "ترخيص MIT"] }
   },
+  {
+    id: 5, name: "OpenWhisper", englishName: "OpenWhisper — Voice-to-Text",
+    description: {
+      en: "A free, open-source voice typing app for Windows and Android. Hold Ctrl+Space, speak, and your words are pasted into the app you're using, such as Word, Gmail, Slack or Notion. Requires your own OpenAI API key.",
+      ar: "أداة مجانية ومفتوحة المصدر لتحويل الكلام إلى نص على Windows وAndroid. اضغط Ctrl+Space وتحدث، وسيتم إدراج النص مباشرة في التطبيق الذي تستخدمه مثل Word وGmail وSlack وNotion. تحتاج إلى مفتاح OpenAI API خاص بك."
+    },
+    category: "voice", url: "https://openwhisper.org/",
+    sourceUrl: "https://github.com/JamesHuckle/OpenWhisper",
+    mark: "🎙", accent: "openwhisper",
+    tags: { en: ["Voice typing", "Speech to text", "Open source", "Windows", "Android", "OpenAI API"], ar: ["الكتابة بالصوت", "تحويل الكلام إلى نص", "مفتوح المصدر", "ويندوز", "أندرويد", "OpenAI API"] }
+  },
 ];
 
 const copy = {
@@ -63,7 +74,7 @@ const copy = {
     selected: "curated tools", meta: "Discover. Try. Create.",
     library: "THE TOOL LIBRARY", heading: "Find your next favorite tool",
     subheading: "A growing collection of useful tools to help you get more done.",
-    result: "results", all: "All tools", research: "Research & Learning", video: "Video & Editing", support: "Customer Support",
+    result: "results", all: "All tools", research: "Research & Learning", video: "Video & Editing", support: "Customer Support", voice: "Voice & Transcription",
     directory: "AI Directories", productivity: "Productivity", design: "Design", writing: "Writing",
     featured: "Featured", visit: "Visit tool",
     emptyTitle: "No matching tools found", emptyText: "Try another search term or choose a different category.",
@@ -83,7 +94,7 @@ const copy = {
     selected: "أدوات مختارة", meta: "اكتشف، جرّب، أنجز",
     library: "مكتبة الأدوات", heading: "اكتشف ما يمكنك إنجازه",
     subheading: "مجموعة من الأدوات المفيدة لتبدأ بها رحلتك.",
-    result: "نتيجة", all: "كل الأدوات", research: "البحث والتعلّم", video: "الفيديو والمونتاج", support: "خدمة العملاء",
+    result: "نتيجة", all: "كل الأدوات", research: "البحث والتعلّم", video: "الفيديو والمونتاج", support: "خدمة العملاء", voice: "الصوت والتفريغ",
     directory: "دليل أدوات", productivity: "الإنتاجية", design: "التصميم", writing: "الكتابة",
     featured: "مختارة", visit: "زيارة الأداة",
     emptyTitle: "لم نعثر على أدوات مطابقة", emptyText: "جرّب كلمة بحث أخرى أو اختر تصنيفاً مختلفاً.",
@@ -95,7 +106,7 @@ const copy = {
   }
 } as const;
 
-const categoryIds = ["all", "research", "video", "support", "directory", "productivity", "design", "writing"] as const;
+const categoryIds = ["all", "research", "video", "support", "voice", "directory", "productivity", "design", "writing"] as const;
 
 export default function Home() {
   const [language, setLanguage] = useState<Language>("en");
